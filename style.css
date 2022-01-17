@@ -1,6 +1,7 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
+/* common style */
 body {
     font-family: "Poppins", sans-serif;
     margin: 50px;
@@ -18,15 +19,77 @@ header {
     width: 50%;
 }
 /* navigation style */
-ul {
+nav > ul {
     display: flex;
     font-size: 16px;
 }
-ul > li {
+nav > ul > li {
     margin-right: 20px;
     list-style: none;
 }
-ul > li > a {
+nav > ul > li > a {
     text-decoration: none;
     color: #000;
+}
+nav > ul > li > a:hover {
+    color: #fcb2bf;
+}
+/* main heading style */
+.flex-container {
+    display: flex;
+    flex-direction: row-reverse;
+}
+.top-heading {
+    font-size: 16px;
+    margin-top: 100px;
+}
+.top-heading-title {
+    font-size: 52px;
+}
+.half-width {
+    width: 50%;
+}
+.half-width > img {
+    margin-left: 20%;
+    transition: transform 0.5s;
+}
+.half-width > img:hover {
+    transform: scale(1.1);
+}
+
+.order-button {
+    display: inline-block;
+    background: #e02c6d;
+    color: #fff;
+    margin-top: 10px;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+}
+.order-button:hover {
+    background: #fff;
+    color: #e02c6d;
+}
+.companies-logo {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+.logos {
+    border-top: 0.5px solid;
+    border-bottom: 0.5px solid;
+    border-color: rgba(160, 160, 160, 0.651);
+}
+.logos > img {
+    margin-right: 10px;
+    margin-left: 10px;
+    padding: 10px;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
 }
