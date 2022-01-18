@@ -1,10 +1,22 @@
 /* fonts */
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&display=swap");
 
 /* common style */
 body {
     font-family: "Poppins", sans-serif;
-    margin: 50px;
+    margin: 0;
+}
+.anchor-button {
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+}
+header,
+main {
+    margin: 0px 150px;
+    margin-top: 15px;
     padding: 0;
 }
 
@@ -58,15 +70,10 @@ nav > ul > li > a:hover {
 }
 
 .order-button {
-    display: inline-block;
     background: #e02c6d;
     color: #fff;
     margin-top: 10px;
     padding: 10px 40px;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
     border-radius: 40px;
 }
 .order-button:hover {
@@ -88,8 +95,79 @@ nav > ul > li > a:hover {
     margin-left: 10px;
     padding: 10px;
 }
-
+/* products styles */
+.popular-collection {
+    margin-top: 150px;
+    position: relative;
+}
+.popular-collection > h1 {
+    text-align: center;
+    margin-bottom: 50px;
+}
 .products {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 30px;
+}
+.product {
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #aaaaaa56;
+    padding: 15px;
+}
+.product > img {
+    width: 100%;
+    border-radius: 5px;
+}
+.product-name {
+    font-size: 28px;
+}
+.product-price {
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+}
+.product-details {
+    font-size: 14px;
+    color: gray;
+    font-family: "Inter", sans-serif;
+}
+.see-more-button {
+    color: #e02c6d;
+    margin-top: 30px;
+    padding: 10px 30px;
+    border-radius: 40px;
+    position: absolute;
+    right: 0;
+    transition: transform 1s;
+}
+.see-more-button:hover > i {
+    transform: translate(20px);
+    color: rgb(66, 156, 230);
+}
+/* footer style */
+footer {
+    background-color: #0a0826;
+    margin-top: 150px;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+footer p {
+    margin: 0;
+}
+.social-media {
+    margin-top: 30px;
+}
+.social-media a {
+    display: inline-block;
+    margin-left: 20px;
+    background-color: #23203b;
+    padding: 15px;
+    border-radius: 50%;
+    text-align: center;
+}
+.fab {
+    color: white;
+    font-size: 32px;
 }
