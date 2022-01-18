@@ -171,3 +171,47 @@ footer p {
     color: white;
     font-size: 32px;
 }
+/* media query */
+/* for mobile devices */
+@media only screen and (max-width: 688px) {
+    .header-title {
+        width: 100%;
+    }
+    nav {
+        display: none;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .half-width img {
+        margin: 0;
+    }
+    .half-width {
+        width: 100%;
+    }
+    .products {
+        grid-template-columns: 1fr;
+    }
+}
+/* for tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 1024px) {
+    .header-title {
+        width: 100%;
+    }
+    nav {
+        display: none;
+    }
+    .flex-container {
+        flex-direction: column;
+    }
+    .half-width img {
+        width: 100%;
+        margin: 0;
+    }
+    .half-width {
+        width: 100%;
+    }
+    .products {
+        grid-template-columns: 1fr 1fr;
+    }
+}
